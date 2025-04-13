@@ -86,7 +86,7 @@ export function Contact() {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-teal-500" />
-                <span>+33 6 12 34 56 78</span>
+                <span>+33 07 71 80 47 87</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-teal-500" />
