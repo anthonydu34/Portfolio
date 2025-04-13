@@ -157,11 +157,11 @@ export default function Home() {
                 link="#"
                 projectImages={[
                   {
-                    src: "/fullstack1.png?height=600&width=800",
+                    src: "/fullstack1.PNG?height=600&width=800",
                     alt: "Image 1 - Dashboard",
                   },
                   {
-                    src: "/fullstack2.png?height=600&width=800",
+                    src: "/fullstack2.PNG?height=600&width=800",
                     alt: "Image 2 - Gestion clients",
                   },
                   {
