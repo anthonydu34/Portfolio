@@ -153,7 +153,7 @@ export default function Home() {
                 title="Application Backend e-commerce"
                 description="API RESTful pour la gestion des produits, utilisateurs et commandes."
                 tags={["Node.js", "Express", "MongoDB"]}
-                imageSrc="/fullstack1.png?height=300&width=400"
+                imageSrc="/fullstack1.PNG?height=300&width=400"
                 link="#"
                 projectImages={[
                   {
