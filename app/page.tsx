@@ -172,6 +172,10 @@ export default function Home() {
                 ]}
                 longDescription=" Cette application backend e-commerce est une API RESTful développée avec Node.js et Express. Elle permet la gestion complète des produits, utilisateurs et commandes. Grâce à une architecture modulaire, elle offre des endpoints sécurisés pour les opérations CRUD, ainsi qu'une intégration avec MongoDB pour le stockage des données. Le système d'authentification JWT garantit la sécurité des transactions et la protection des données sensibles."
               />
+              <a
+                href="https://portfolio-photographe.vercel.app/"
+                target="_blank"
+              >
               <ProjectCard
                 title="Portfolio Photographe"
                 description="Site vitrine pour un photographe professionnel avec galerie dynamique et système de réservation de séances."
@@ -194,6 +198,7 @@ export default function Home() {
                 ]}
                 longDescription="Ce portfolio élégant met en valeur le travail d'un photographe professionnel grâce à une galerie dynamique et responsive. Développé avec Next.js pour des performances optimales, il intègre un système de réservation de séances photo avec calendrier interactif et paiement d'acompte. Les visiteurs peuvent filtrer les photos par catégorie et commander des tirages directement depuis le site."
               />
+                </a>
               <ProjectCard
                 title="Blog Tech"
                 description="Plateforme de blog avec système de gestion de contenu personnalisé et fonctionnalités de commentaires."
