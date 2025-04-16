@@ -120,7 +120,6 @@ export default function Home() {
             </div>
             <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
               <ProjectCard
-                href="portfolio-photographe.vercel.app"
                 title="Site Vitrine Responsive"
                 description="Site de vente en ligne développé avec React et css"
                 tags={["React", "css"]}
@@ -163,6 +162,7 @@ export default function Home() {
                   },
                   {
                     src: "/fullstack2.PNG?height=600&width=800",
+
                     alt: "Image 2 - Gestion clients",
                   },
                   {
@@ -176,29 +176,30 @@ export default function Home() {
                 href="https://portfolio-photographe.vercel.app/"
                 target="_blank"
               >
-              <ProjectCard
-                title="Portfolio Photographe"
-                description="Site vitrine pour un photographe professionnel avec galerie dynamique et système de réservation de séances."
-                tags={["Next.js", "Prisma", "PostgreSQL"]}
-                imageSrc="/photographe.PNG?height=300&width=400"
-                link="#"
-                projectImages={[
-                  {
-                    src: "/placeholder.svg?height=600&width=800",
-                    alt: "Image 1 - Galerie",
-                  },
-                  {
-                    src: "/placeholder.svg?height=600&width=800",
-                    alt: "Image 2 - Page de réservation",
-                  },
-                  {
-                    src: "/placeholder.svg?height=600&width=800",
-                    alt: "Image 3 - Portfolio",
-                  },
-                ]}
-                longDescription="Ce portfolio élégant met en valeur le travail d'un photographe professionnel grâce à une galerie dynamique et responsive. Développé avec Next.js pour des performances optimales, il intègre un système de réservation de séances photo avec calendrier interactif et paiement d'acompte. Les visiteurs peuvent filtrer les photos par catégorie et commander des tirages directement depuis le site."
-              />
-                </a>
+                <ProjectCard
+                  title="Portfolio Photographe"
+                  description="Site vitrine pour un photographe professionnel avec galerie dynamique et système de réservation de séances."
+                  tags={["Next.js", "Prisma", "PostgreSQL"]}
+                  imageSrc="/photographe.PNG?height=300&width=400"
+                  link="#"
+                  projectImages={[
+                    {
+                      src: "/placeholder.svg?height=600&width=800",
+                      alt: "Image 1 - Galerie",
+                    },
+                    {
+                      src: "/placeholder.svg?height=600&width=800",
+                      alt: "Image 2 - Page de réservation",
+                    },
+                    {
+                      src: "/placeholder.svg?height=600&width=800",
+                      alt: "Image 3 - Portfolio",
+                    },
+                  ]}
+                  longDescription="Ce portfolio élégant met en valeur le travail d'un photographe professionnel grâce à une galerie dynamique et responsive. Développé avec Next.js pour des performances optimales, il intègre un système de réservation de séances photo avec calendrier interactif et paiement d'acompte. Les visiteurs peuvent filtrer les photos par catégorie et commander des tirages directement depuis le site."
+                />
+              </a>
+
               <ProjectCard
                 title="Blog Tech"
                 description="Plateforme de blog avec système de gestion de contenu personnalisé et fonctionnalités de commentaires."

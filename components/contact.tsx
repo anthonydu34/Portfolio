@@ -1,8 +1,10 @@
 "use client";
 
+
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Mail, MapPin, Phone, Send } from "lucide-react";
+
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -17,12 +19,15 @@ import { Textarea } from "@/components/ui/textarea";
 import { toast } from "@/components/ui/use-toast";
 
 export function Contact() {
+
   const formRef = useRef<HTMLFormElement>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+
 
     if (!formRef.current) return;
 
@@ -48,6 +53,7 @@ export function Contact() {
         });
       })
       .finally(() => setIsSubmitting(false));
+
   };
 
   return (
@@ -56,10 +62,12 @@ export function Contact() {
       className="w-full py-12 md:py-24 lg:py-32 bg-slate-50"
     >
       <div className="container px-4 md:px-6">
+
         {/* ... ton texte d'intro ... */}
 
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 py-12 lg:grid-cols-2">
           {/* Bloc de contact à gauche (inchangé) */}
+
           <Card>
             <CardHeader>
               <CardTitle>Informations de contact</CardTitle>
@@ -68,7 +76,9 @@ export function Contact() {
             <CardContent className="space-y-4">
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-teal-500" />
+
                 <span>arozarena34@gmail.com</span>
+
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-teal-500" />
@@ -82,6 +92,7 @@ export function Contact() {
           </Card>
 
           {/* Formulaire */}
+
           <Card>
             <CardHeader>
               <CardTitle>Envoyez-moi un message</CardTitle>
@@ -90,24 +101,30 @@ export function Contact() {
               </CardDescription>
             </CardHeader>
             <CardContent>
+
               <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
+
                 <div className="space-y-2">
                   <Label htmlFor="name">Nom</Label>
                   <Input
                     id="name"
+
                     name="user_name"
                     placeholder="Votre nom"
                     required
+
                   />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="email">Email</Label>
                   <Input
                     id="email"
+
                     name="user_email"
                     placeholder="votre@email.com"
                     type="email"
                     required
+
                   />
                 </div>
                 <div className="space-y-2">
@@ -117,6 +134,8 @@ export function Contact() {
                     name="subject"
                     placeholder="Sujet de votre message"
                     required
+
+
                   />
                 </div>
                 <div className="space-y-2">
@@ -126,6 +145,7 @@ export function Contact() {
                     name="message"
                     placeholder="Votre message"
                     required
+
                     className="min-h-[120px]"
                   />
                 </div>
@@ -154,7 +174,9 @@ export function Contact() {
                         <path
                           className="opacity-75"
                           fill="currentColor"
+
                           d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+
                         ></path>
                       </svg>
                     </span>
