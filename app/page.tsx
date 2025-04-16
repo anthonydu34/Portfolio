@@ -76,7 +76,8 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="mx-auto max-w-3xl space-y-4 py-8 text-center sm:text-left">
+
+            <div className="mx-auto max-w-3xl space-y-4 py-8 text-center sm:text-left ">
               <p className="text-slate-700">
                 Bonjour ! Je suis Anthony, développeur web freelance basé à
                 Avignon. Actuellement en L2 Informatique au CERI, je me

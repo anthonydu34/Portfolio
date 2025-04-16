@@ -1,10 +1,8 @@
 "use client";
 
-
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Mail, MapPin, Phone, Send } from "lucide-react";
-
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -53,7 +51,6 @@ export function Contact() {
         });
       })
       .finally(() => setIsSubmitting(false));
-
   };
 
   return (
@@ -62,12 +59,10 @@ export function Contact() {
       className="w-full py-12 md:py-24 lg:py-32 bg-slate-50"
     >
       <div className="container px-4 md:px-6">
-
         {/* ... ton texte d'intro ... */}
 
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 py-12 lg:grid-cols-2">
           {/* Bloc de contact à gauche (inchangé) */}
-
           <Card>
             <CardHeader>
               <CardTitle>Informations de contact</CardTitle>
@@ -92,7 +87,6 @@ export function Contact() {
           </Card>
 
           {/* Formulaire */}
-
           <Card>
             <CardHeader>
               <CardTitle>Envoyez-moi un message</CardTitle>
@@ -119,12 +113,11 @@ export function Contact() {
                   <Label htmlFor="email">Email</Label>
                   <Input
                     id="email"
-
                     name="user_email"
                     placeholder="votre@email.com"
                     type="email"
                     required
-
+                    
                   />
                 </div>
                 <div className="space-y-2">
@@ -134,7 +127,7 @@ export function Contact() {
                     name="subject"
                     placeholder="Sujet de votre message"
                     required
-
+                    
 
                   />
                 </div>
@@ -145,7 +138,7 @@ export function Contact() {
                     name="message"
                     placeholder="Votre message"
                     required
-
+                    
                     className="min-h-[120px]"
                   />
                 </div>
