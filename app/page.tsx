@@ -180,7 +180,7 @@ export default function Home() {
                 title="Portfolio Photographe"
                 description="Site vitrine pour un photographe professionnel avec galerie dynamique et système de réservation de séances."
                 tags={["Next.js", "Prisma", "PostgreSQL"]}
-                imageSrc="/placeholder.svg?height=300&width=400"
+                imageSrc="/photographe.png?height=300&width=400"
                 link="#"
                 projectImages={[
                   {
