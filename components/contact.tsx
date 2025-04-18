@@ -17,18 +17,15 @@ import { Textarea } from "@/components/ui/textarea";
 import { toast } from "@/components/ui/use-toast";
 
 export function Contact() {
-
   const formRef = useRef<HTMLFormElement>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
-
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-
     if (!formRef.current) return;
-
+    console.log("test");
     emailjs
       .sendForm(
         "service_h5txm1k", // Remplace par ton Service ID
@@ -73,7 +70,6 @@ export function Contact() {
                 <Mail className="h-5 w-5 text-teal-500" />
 
                 <span>arozarena34@gmail.com</span>
-
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-teal-500" />
@@ -95,18 +91,14 @@ export function Contact() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-
               <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
-
                 <div className="space-y-2">
                   <Label htmlFor="name">Nom</Label>
                   <Input
                     id="name"
-
                     name="user_name"
                     placeholder="Votre nom"
                     required
-
                   />
                 </div>
                 <div className="space-y-2">
@@ -117,7 +109,6 @@ export function Contact() {
                     placeholder="votre@email.com"
                     type="email"
                     required
-                    
                   />
                 </div>
                 <div className="space-y-2">
@@ -127,8 +118,6 @@ export function Contact() {
                     name="subject"
                     placeholder="Sujet de votre message"
                     required
-                    
-
                   />
                 </div>
                 <div className="space-y-2">
@@ -138,7 +127,6 @@ export function Contact() {
                     name="message"
                     placeholder="Votre message"
                     required
-                    
                     className="min-h-[120px]"
                   />
                 </div>
@@ -167,9 +155,7 @@ export function Contact() {
                         <path
                           className="opacity-75"
                           fill="currentColor"
-
                           d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
-
                         ></path>
                       </svg>
                     </span>
