@@ -200,6 +200,7 @@ export default function Home() {
                   longDescription="Ce portfolio élégant met en valeur le travail d'un photographe professionnel grâce à une galerie dynamique et responsive. Développé avec Next.js pour des performances optimales, il intègre un système de réservation de séances photo avec calendrier interactif et paiement d'acompte. Les visiteurs peuvent filtrer les photos par catégorie et commander des tirages directement depuis le site."
                 />
               </a>
+              {/*
 
               <ProjectCard
                 title="Blog Tech"
@@ -245,6 +246,7 @@ export default function Home() {
                 ]}
                 longDescription="Cette application météo multiplateforme fournit des prévisions précises et en temps réel. Développée avec React Native pour une expérience native sur iOS et Android, elle utilise l'API OpenWeatherMap pour récupérer les données météorologiques. Les fonctionnalités incluent la géolocalisation, les prévisions sur 7 jours, les alertes météo et une carte interactive des précipitations."
               />
+
               <ProjectCard
                 title="Jeu Éducatif"
                 description="Jeu interactif pour enfants développé dans le cadre d'un projet universitaire visant à enseigner les bases de la programmation."
@@ -266,7 +268,7 @@ export default function Home() {
                   },
                 ]}
                 longDescription="Ce jeu éducatif conçu pour les enfants de 8 à 12 ans enseigne les concepts fondamentaux de la programmation de manière ludique. Développé en JavaScript avec Canvas pour les animations, il propose différents niveaux de difficulté où les joueurs doivent résoudre des puzzles en utilisant des blocs de code simples. Le projet a été réalisé dans le cadre d'un cours universitaire sur les technologies web interactives."
-              />
+              />*/}
             </div>
           </div>
         </section>
