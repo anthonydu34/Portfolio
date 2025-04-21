@@ -3,8 +3,10 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "ARAZORANA.dev",
-  description: "Created with v0",
-  generator: "v0.dev",
+  description:
+    "Portfolio freelance fullstack developper, CS student and open source contributor",
+  keywords:
+    "freelance, fullstack, developer, portfolio, open source, contributor, france, student",
 };
 
 export default function RootLayout({
