@@ -8,6 +8,7 @@ import { Skills } from "@/components/skills";
 import { Education } from "@/components/education";
 import { Contact } from "@/components/contact";
 import { Footer } from "@/components/footer";
+import { Icon } from "lucide-react";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Navbar />
       <main className="flex-1">
         {/* Hero Section test */}
+
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-slate-900 to-slate-800 text-white">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
